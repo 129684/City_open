@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8CBC2D1C-F72B-451E-83C7-B03223EC2011}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>City_open</RootNamespace>
+    <AssemblyName>City_open</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="窗口\Tsrxp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗口\Tsrxp.Designer.cs">
+      <DependentUpon>Tsrxp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗口\Shopping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗口\Shopping.Designer.cs">
+      <DependentUpon>Shopping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗口\Complain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗口\Complain.Designer.cs">
+      <DependentUpon>Complain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗口\Expense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗口\Expense.Designer.cs">
+      <DependentUpon>Expense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗口\Userpwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗口\Userpwd.Designer.cs">
+      <DependentUpon>Userpwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗口\upUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗口\upUser.Designer.cs">
+      <DependentUpon>upUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗口\Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗口\Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗口\BRT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗口\BRT.Designer.cs">
+      <DependentUpon>BRT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBHelper.cs" />
+    <Compile Include="窗口\Ticket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗口\Ticket.Designer.cs">
+      <DependentUpon>Ticket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗口\Voucgar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗口\Voucgar.Designer.cs">
+      <DependentUpon>Voucgar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗口\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗口\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗口\UpdatM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗口\UpdatM.Designer.cs">
+      <DependentUpon>UpdatM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗口\TianjiaClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗口\TianjiaClass.Designer.cs">
+      <DependentUpon>TianjiaClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗口\TianjiaM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗口\TianjiaM.Designer.cs">
+      <DependentUpon>TianjiaM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗口\Management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗口\Management.Designer.cs">
+      <DependentUpon>Management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗口\AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗口\AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗口\Channel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗口\Channel.Designer.cs">
+      <DependentUpon>Channel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗口\Findpwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗口\Findpwd.Designer.cs">
+      <DependentUpon>Findpwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗口\Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗口\Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗口\Start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗口\Start.Designer.cs">
+      <DependentUpon>Start.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="窗口\UserLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗口\UserLogin.Designer.cs">
+      <DependentUpon>UserLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="控件\Wate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="控件\Wate.Designer.cs">
+      <DependentUpon>Wate.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="窗口\Tsrxp.resx">
+      <DependentUpon>Tsrxp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗口\Shopping.resx">
+      <DependentUpon>Shopping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗口\Complain.resx">
+      <DependentUpon>Complain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗口\Expense.resx">
+      <DependentUpon>Expense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗口\Userpwd.resx">
+      <DependentUpon>Userpwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗口\upUser.resx">
+      <DependentUpon>upUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗口\Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗口\BRT.resx">
+      <DependentUpon>BRT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗口\Ticket.resx">
+      <DependentUpon>Ticket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗口\Voucgar.resx">
+      <DependentUpon>Voucgar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗口\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗口\UpdatM.resx">
+      <DependentUpon>UpdatM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗口\TianjiaClass.resx">
+      <DependentUpon>TianjiaClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗口\TianjiaM.resx">
+      <DependentUpon>TianjiaM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗口\Management.resx">
+      <DependentUpon>Management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗口\AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗口\Channel.resx">
+      <DependentUpon>Channel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗口\Findpwd.resx">
+      <DependentUpon>Findpwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="窗口\Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗口\Start.resx">
+      <DependentUpon>Start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗口\UserLogin.resx">
+      <DependentUpon>UserLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t012bd5a2d4e4f01bb2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t0158ecc6d10822557b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t01b3cfdc5aa2da54a5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\返回1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t01f3a7854038d6fe70.jpg" />
+    <None Include="Resources\t01934b83b17377874d.jpg" />
+    <None Include="Resources\t0148751bc0648e4f5a.jpg" />
+    <None Include="Resources\t01793f79849128f598.jpg" />
+    <None Include="Resources\t0198f88c14d0b85b35.jpg" />
+    <None Include="Resources\t0143655ec9385f8575.jpg" />
+    <None Include="Resources\t017ca5daaed9ead9a9.jpg" />
+    <None Include="Resources\t014bdbb452ba1e8916.png" />
+    <None Include="Resources\t01245430bd2eab3034.jpg" />
+    <None Include="Resources\t016e58bb424b6b588d.jpg" />
+    <None Include="Resources\t01797ae7154eeee553.jpg" />
+    <None Include="Resources\t018f1e23673eb0a25b.jpg" />
+    <Content Include="Resources\t019a07308ef4dc81a1.jpg" />
+    <None Include="Resources\搜索.jpg" />
+    <None Include="Resources\一卡通.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
